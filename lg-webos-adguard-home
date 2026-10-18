@@ -1,14 +1,16 @@
 ! Title: LG WebOS Combined Blocklist (Custom Merge - Optimized)
 ! Description: Cleaned & updated blocklist for LG WebOS tracking, ads, and OTA updates.
-! Version: 2026.08.27.Merged
+! Version: 2026.10.18.Merged
 ! Syntax: AdGuard Home
-! Last Modified: 27 Aug 2026 22:50 UTC
+! Last Modified: 18 Oct 2026 15:33 UTC
 
 # --- [SYSTEM CLOCK & CORE API SAFE - EXCLUDED FROM BLOCKING] ---
-# Do not block these root domains or whitelist them (@@||it.lgtvsdp.com^) 
-# if you experience clock desync or home dashboard initialization issues:
-# it.lgtvsdp.com
-# it.lgeapi.com
+# Do not block these root domains or whitelist them (e.g. @@||lgtvsdp.com^ or @@||lgeapi.com^) 
+# if you experience clock desync or home dashboard initialization issues.
+# Regional subdomains (*.lgtvsdp.com, *.lgeapi.com, such as it.lgtvsdp.com, pl.lgeapi.com, etc.)
+# are required for regional time sync, account services, and dashboard initialization:
+# *.lgtvsdp.com
+# *.lgeapi.com
 # eic.common.lgthinq.com
 
 # --- [OTA UPDATE & NOTIFICATION SHIELD] ---
@@ -60,6 +62,7 @@
 ||esi-prd.net^
 
 # --- [LG THINQ & IOT TELEMETRY] ---
+||connect-client.lgthinq.com^
 ||lgtviot.com^
 ||lgthinqhome.com^
 ||lgtvonline.lge.com^
