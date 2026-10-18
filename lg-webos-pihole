@@ -1,0 +1,146 @@
+# Title: LG WebOS Blocklist (Pi-hole / Raw Domains)
+# Description: Cleaned, curated & verified blocklist for LG WebOS tracking, telemetry, ads, ACR, and OTA updates.
+# Version: 2026.10.18.Universal
+# Syntax: Plain Domains (one domain per line, suitable for Pi-hole and dnsmasq)
+# Last Modified: 18 Oct 2026 18:05 UTC
+# Homepage: https://github.com/DreadPirateNear/lg-webos-blocklist
+# License: GPLv3
+
+# ==============================================================================
+# [SYSTEM CLOCK & CORE API SAFE - EXCLUDED FROM BLOCKING]
+# ==============================================================================
+# WARNING: DO NOT BLOCK THESE DOMAINS!
+# Regional subdomains (*.lgtvsdp.com, *.lgeapi.com) are required for NTP time sync and TV boot.
+# If you experience issues, whitelist:
+# lgtvsdp.com
+# lgeapi.com
+# netflix.lge.com
+# eic.common.lgthinq.com
+
+# ==============================================================================
+# [1. OTA UPDATE & NOTIFICATION SHIELD]
+# ==============================================================================
+aic-gfts.lge.com
+aic-ngfts.lge.com
+aic-ngfts.nextlgsdp.com
+aic-ngfts.tv.wiselg.com
+aic-op-lss.lgthinq.com
+eic-gfts.lge.com
+eic-ngfts.lge.com
+eic-ngfts.nextlgsdp.com
+eic-ngfts.tv.wiselg.com
+eic-op-lss.lgthinq.com
+gfts.lge.com
+kic-gfts.lge.com
+kic-ngfts.lge.com
+kic-ngfts.nextlgsdp.com
+kic-ngfts.tv.wiselg.com
+kic-op-lss.lgthinq.com
+knu.lge.com
+lss.lgthinq.com
+ngfts.lge.com
+ngfts.nextlgsdp.com
+nsu.lge.com
+ota.lge.com
+qt2-ngfts.lge.com
+snu-dev.lge.com
+snu.lge.com
+su-dev.lge.com
+su-ssl.lge.com
+su.lge.com
+swu.lge.com
+
+# ==============================================================================
+# [2. LG ADS, SCREENSAVER & HOME LAUNCHER PROMOTIONS]
+# ==============================================================================
+a.lgappstv.com
+ad.lgappstv.com
+ads.lgtvcommon.com
+adsdtvc.com
+aic.cdpbeacon.lgtvcommon.com
+aic.cdplauncher.lgtvcommon.com
+aic.homeprv.lgtvcommon.com
+aic.nudge.lgtvcommon.com
+aic.recommend.lgtvcommon.com
+aic.wiseconfig.lgtvcommon.com
+cdpbeacon.lgtvcommon.com
+cdplauncher.lgtvcommon.com
+cdpsvc.lgtvcommon.com
+de.info.lgsmartad.com
+eic.cdpbeacon.lgtvcommon.com
+eic.cdplauncher.lgtvcommon.com
+eic.cdpsvc.lgtvcommon.com
+eic.homeprv.lgtvcommon.com
+eic.nudge.lgtvcommon.com
+eic.rdl.lgtvcommon.com
+eic.recommend.lgtvcommon.com
+eic.wiseconfig.lgtvcommon.com
+fms.lgunifiedsmart.com
+homeprv.lgtvcommon.com
+ibis.lgappstv.com
+ibs.lgappstv.com
+info.lgsmartad.com
+initscr.lge.com
+kic.cdpbeacon.lgtvcommon.com
+kic.cdplauncher.lgtvcommon.com
+kic.homeprv.lgtvcommon.com
+kic.nudge.lgtvcommon.com
+kic.recommend.lgtvcommon.com
+kic.wiseconfig.lgtvcommon.com
+lgrecommends.lgappstv.com
+lgshopsvc.lgappstv.com
+lgsmartad.com
+lgsmartplatform.com
+lgsmartweb.com
+lgunifiedsmart.com
+ngda.lge.com
+nudge.lgtvcommon.com
+rdl.lgtvcommon.com
+recommend.lgtvcommon.com
+smart.adtvc.app
+us.info.lgsmartad.com
+wiseconfig.lgtvcommon.com
+
+# ==============================================================================
+# [3. ACR TRACKING, ANALYTICS & VIEWING FINGERPRINTING]
+# ==============================================================================
+alphonso.tv
+cjpowercast.com
+cr-alphonso.tv
+prov-alphonso.tv
+smartclip.com
+smartclip.net
+tvsquared.com
+yumenetworks.com
+
+# ==============================================================================
+# [4. LG CHANNELS & STREAMING TELEMETRY]
+# ==============================================================================
+app-lgwebos.pluto.tv
+aws-thinq-prd.net
+bss.lgechannel.com
+esi-prd.net
+lgechannel.com
+xumo.com
+
+# ==============================================================================
+# [5. LG THINQ & IOT TELEMETRY]
+# ==============================================================================
+aic.api.lgtviot.com
+aic.lgtviot.com
+aic.service.lgtvcommon.com
+connect-client.lgthinq.com
+eic.api.lgtviot.com
+eic.iotservice.lgthinq.com
+eic.lgtviot.com
+eic.service.lgthinq.com
+eic.service.lgtvcommon.com
+kic.api.lgtviot.com
+kic.lgtviot.com
+kic.service.lgtvcommon.com
+lgthinqhome.com
+lgtviot.com
+lgtvonline.lge.com
+noti.lgthinq.com
+objectcontent.lgthinq.com
+service.lgtvcommon.com

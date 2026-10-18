@@ -1,73 +1,147 @@
-! Title: LG WebOS Combined Blocklist (Custom Merge - Optimized)
-! Description: Cleaned & updated blocklist for LG WebOS tracking, ads, and OTA updates.
-! Version: 2026.10.18.Merged
-! Syntax: AdGuard Home
-! Last Modified: 18 Oct 2026 15:33 UTC
+! Title: LG WebOS Blocklist (AdGuard Home)
+! Description: Cleaned, curated & verified blocklist for LG WebOS tracking, telemetry, ads, ACR, and OTA updates.
+! Version: 2026.10.18.Universal
+! Syntax: AdGuard Home (ABP)
+! Last Modified: 18 Oct 2026 18:05 UTC
+! Homepage: https://github.com/DreadPirateNear/lg-webos-blocklist
+! License: GPLv3
 
-# --- [SYSTEM CLOCK & CORE API SAFE - EXCLUDED FROM BLOCKING] ---
-# Do not block these root domains or whitelist them (e.g. @@||lgtvsdp.com^ or @@||lgeapi.com^) 
-# if you experience clock desync or home dashboard initialization issues.
-# Regional subdomains (*.lgtvsdp.com, *.lgeapi.com, such as it.lgtvsdp.com, pl.lgeapi.com, etc.)
-# are required for regional time sync, account services, and dashboard initialization:
-# *.lgtvsdp.com
-# *.lgeapi.com
-# eic.common.lgthinq.com
+# ==============================================================================
+# [SYSTEM CLOCK & CORE API SAFE - EXCLUDED FROM BLOCKING]
+# ==============================================================================
+# WARNING: DO NOT BLOCK THESE DOMAINS!
+# Regional subdomains (*.lgtvsdp.com, *.lgeapi.com, such as it.lgtvsdp.com, pl.lgeapi.com, us.lgtvsdp.com)
+# are required for regional NTP time sync, account services, and TV dashboard boot.
+# If you experience clock desync or home dashboard issues, ensure these remain allowed or whitelisted:
+# @@||lgtvsdp.com^
+# @@||lgeapi.com^
+# @@||netflix.lge.com^
+# @@||eic.common.lgthinq.com^
 
-# --- [OTA UPDATE & NOTIFICATION SHIELD] ---
+# ==============================================================================
+# [1. OTA UPDATE & NOTIFICATION SHIELD]
+# ==============================================================================
+||aic-gfts.lge.com^
+||aic-ngfts.lge.com^
+||aic-ngfts.nextlgsdp.com^
+||aic-ngfts.tv.wiselg.com^
+||aic-op-lss.lgthinq.com^
 ||eic-gfts.lge.com^
+||eic-ngfts.lge.com^
+||eic-ngfts.nextlgsdp.com^
 ||eic-ngfts.tv.wiselg.com^
 ||eic-op-lss.lgthinq.com^
+||gfts.lge.com^
+||kic-gfts.lge.com^
+||kic-ngfts.lge.com^
+||kic-ngfts.nextlgsdp.com^
+||kic-ngfts.tv.wiselg.com^
+||kic-op-lss.lgthinq.com^
 ||knu.lge.com^
 ||lss.lgthinq.com^
+||ngfts.lge.com^
+||ngfts.nextlgsdp.com^
 ||nsu.lge.com^
 ||ota.lge.com^
-||snu.lge.com^
+||qt2-ngfts.lge.com^
 ||snu-dev.lge.com^
-||su.lge.com^
+||snu.lge.com^
 ||su-dev.lge.com^
 ||su-ssl.lge.com^
+||su.lge.com^
 ||swu.lge.com^
 
-# --- [LG ADS, BEACONS & PROMOTIONS] ---
-||lgsmartad.com^
-||lgsmartplatform.com^
-||lgrecommends.lgappstv.com^
+# ==============================================================================
+# [2. LG ADS, SCREENSAVER & HOME LAUNCHER PROMOTIONS]
+# ==============================================================================
+||a.lgappstv.com^
 ||ad.lgappstv.com^
-||ibis.lgappstv.com^
-||ibs.lgappstv.com^
-||ngda.lge.com^
-||ngfts.lge.com^
-||eic.nudge.lgtvcommon.com^
-||eic.rdl.lgtvcommon.com^
-||eic.recommend.lgtvcommon.com^
+||ads.lgtvcommon.com^
+||adsdtvc.com^
+||aic.cdpbeacon.lgtvcommon.com^
+||aic.cdplauncher.lgtvcommon.com^
+||aic.homeprv.lgtvcommon.com^
+||aic.nudge.lgtvcommon.com^
+||aic.recommend.lgtvcommon.com^
+||aic.wiseconfig.lgtvcommon.com^
+||cdpbeacon.lgtvcommon.com^
+||cdplauncher.lgtvcommon.com^
+||cdpsvc.lgtvcommon.com^
+||de.info.lgsmartad.com^
 ||eic.cdpbeacon.lgtvcommon.com^
 ||eic.cdplauncher.lgtvcommon.com^
 ||eic.cdpsvc.lgtvcommon.com^
 ||eic.homeprv.lgtvcommon.com^
+||eic.nudge.lgtvcommon.com^
+||eic.rdl.lgtvcommon.com^
+||eic.recommend.lgtvcommon.com^
+||eic.wiseconfig.lgtvcommon.com^
+||fms.lgunifiedsmart.com^
+||homeprv.lgtvcommon.com^
+||ibis.lgappstv.com^
+||ibs.lgappstv.com^
+||info.lgsmartad.com^
+||initscr.lge.com^
+||kic.cdpbeacon.lgtvcommon.com^
+||kic.cdplauncher.lgtvcommon.com^
+||kic.homeprv.lgtvcommon.com^
+||kic.nudge.lgtvcommon.com^
+||kic.recommend.lgtvcommon.com^
+||kic.wiseconfig.lgtvcommon.com^
+||lgrecommends.lgappstv.com^
+||lgshopsvc.lgappstv.com^
+||lgsmartad.com^
+||lgsmartplatform.com^
+||lgsmartweb.com^
+||lgunifiedsmart.com^
+||ngda.lge.com^
+||nudge.lgtvcommon.com^
+||rdl.lgtvcommon.com^
+||recommend.lgtvcommon.com^
+||smart.adtvc.app^
+||us.info.lgsmartad.com^
+||wiseconfig.lgtvcommon.com^
 
-# --- [ACR TRACKING, ANALYTICS & SCREENSAVER ADS] ---
+# ==============================================================================
+# [3. ACR TRACKING, ANALYTICS & VIEWING FINGERPRINTING]
+# ==============================================================================
 ||alphonso.tv^
+||cjpowercast.com^
 ||cr-alphonso.tv^
 ||prov-alphonso.tv^
-||tvsquared.com^
 ||smartclip.com^
 ||smartclip.net^
+||tvsquared.com^
 ||yumenetworks.com^
-||cjpowercast.com^
 
-# --- [LG CHANNELS & STREAMING TELEMETRY] ---
+# ==============================================================================
+# [4. LG CHANNELS & STREAMING TELEMETRY]
+# ==============================================================================
 ||app-lgwebos.pluto.tv^
-||xumo.com^
 ||aws-thinq-prd.net^
+||bss.lgechannel.com^
 ||esi-prd.net^
+||lgechannel.com^
+||xumo.com^
 
-# --- [LG THINQ & IOT TELEMETRY] ---
+# ==============================================================================
+# [5. LG THINQ & IOT TELEMETRY]
+# ==============================================================================
+||aic.api.lgtviot.com^
+||aic.lgtviot.com^
+||aic.service.lgtvcommon.com^
 ||connect-client.lgthinq.com^
-||lgtviot.com^
+||eic.api.lgtviot.com^
+||eic.iotservice.lgthinq.com^
+||eic.lgtviot.com^
+||eic.service.lgthinq.com^
+||eic.service.lgtvcommon.com^
+||kic.api.lgtviot.com^
+||kic.lgtviot.com^
+||kic.service.lgtvcommon.com^
 ||lgthinqhome.com^
+||lgtviot.com^
 ||lgtvonline.lge.com^
 ||noti.lgthinq.com^
 ||objectcontent.lgthinq.com^
-||eic.iotservice.lgthinq.com^
-||eic.service.lgthinq.com^
-||eic.service.lgtvcommon.com^
+||service.lgtvcommon.com^

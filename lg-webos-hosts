@@ -1,0 +1,146 @@
+# Title: LG WebOS Blocklist (Hosts format)
+# Description: Cleaned, curated & verified blocklist for LG WebOS tracking, telemetry, ads, ACR, and OTA updates.
+# Version: 2026.10.18.Universal
+# Syntax: Standard Unix Hosts (0.0.0.0 <domain>)
+# Last Modified: 18 Oct 2026 18:05 UTC
+# Homepage: https://github.com/DreadPirateNear/lg-webos-blocklist
+# License: GPLv3
+
+# ==============================================================================
+# [SYSTEM CLOCK & CORE API SAFE - EXCLUDED FROM BLOCKING]
+# ==============================================================================
+# WARNING: DO NOT BLOCK THESE DOMAINS!
+# Regional subdomains (*.lgtvsdp.com, *.lgeapi.com) are required for NTP time sync and TV boot.
+# If you experience issues, whitelist:
+# lgtvsdp.com
+# lgeapi.com
+# netflix.lge.com
+# eic.common.lgthinq.com
+
+# ==============================================================================
+# [1. OTA UPDATE & NOTIFICATION SHIELD]
+# ==============================================================================
+0.0.0.0 aic-gfts.lge.com
+0.0.0.0 aic-ngfts.lge.com
+0.0.0.0 aic-ngfts.nextlgsdp.com
+0.0.0.0 aic-ngfts.tv.wiselg.com
+0.0.0.0 aic-op-lss.lgthinq.com
+0.0.0.0 eic-gfts.lge.com
+0.0.0.0 eic-ngfts.lge.com
+0.0.0.0 eic-ngfts.nextlgsdp.com
+0.0.0.0 eic-ngfts.tv.wiselg.com
+0.0.0.0 eic-op-lss.lgthinq.com
+0.0.0.0 gfts.lge.com
+0.0.0.0 kic-gfts.lge.com
+0.0.0.0 kic-ngfts.lge.com
+0.0.0.0 kic-ngfts.nextlgsdp.com
+0.0.0.0 kic-ngfts.tv.wiselg.com
+0.0.0.0 kic-op-lss.lgthinq.com
+0.0.0.0 knu.lge.com
+0.0.0.0 lss.lgthinq.com
+0.0.0.0 ngfts.lge.com
+0.0.0.0 ngfts.nextlgsdp.com
+0.0.0.0 nsu.lge.com
+0.0.0.0 ota.lge.com
+0.0.0.0 qt2-ngfts.lge.com
+0.0.0.0 snu-dev.lge.com
+0.0.0.0 snu.lge.com
+0.0.0.0 su-dev.lge.com
+0.0.0.0 su-ssl.lge.com
+0.0.0.0 su.lge.com
+0.0.0.0 swu.lge.com
+
+# ==============================================================================
+# [2. LG ADS, SCREENSAVER & HOME LAUNCHER PROMOTIONS]
+# ==============================================================================
+0.0.0.0 a.lgappstv.com
+0.0.0.0 ad.lgappstv.com
+0.0.0.0 ads.lgtvcommon.com
+0.0.0.0 adsdtvc.com
+0.0.0.0 aic.cdpbeacon.lgtvcommon.com
+0.0.0.0 aic.cdplauncher.lgtvcommon.com
+0.0.0.0 aic.homeprv.lgtvcommon.com
+0.0.0.0 aic.nudge.lgtvcommon.com
+0.0.0.0 aic.recommend.lgtvcommon.com
+0.0.0.0 aic.wiseconfig.lgtvcommon.com
+0.0.0.0 cdpbeacon.lgtvcommon.com
+0.0.0.0 cdplauncher.lgtvcommon.com
+0.0.0.0 cdpsvc.lgtvcommon.com
+0.0.0.0 de.info.lgsmartad.com
+0.0.0.0 eic.cdpbeacon.lgtvcommon.com
+0.0.0.0 eic.cdplauncher.lgtvcommon.com
+0.0.0.0 eic.cdpsvc.lgtvcommon.com
+0.0.0.0 eic.homeprv.lgtvcommon.com
+0.0.0.0 eic.nudge.lgtvcommon.com
+0.0.0.0 eic.rdl.lgtvcommon.com
+0.0.0.0 eic.recommend.lgtvcommon.com
+0.0.0.0 eic.wiseconfig.lgtvcommon.com
+0.0.0.0 fms.lgunifiedsmart.com
+0.0.0.0 homeprv.lgtvcommon.com
+0.0.0.0 ibis.lgappstv.com
+0.0.0.0 ibs.lgappstv.com
+0.0.0.0 info.lgsmartad.com
+0.0.0.0 initscr.lge.com
+0.0.0.0 kic.cdpbeacon.lgtvcommon.com
+0.0.0.0 kic.cdplauncher.lgtvcommon.com
+0.0.0.0 kic.homeprv.lgtvcommon.com
+0.0.0.0 kic.nudge.lgtvcommon.com
+0.0.0.0 kic.recommend.lgtvcommon.com
+0.0.0.0 kic.wiseconfig.lgtvcommon.com
+0.0.0.0 lgrecommends.lgappstv.com
+0.0.0.0 lgshopsvc.lgappstv.com
+0.0.0.0 lgsmartad.com
+0.0.0.0 lgsmartplatform.com
+0.0.0.0 lgsmartweb.com
+0.0.0.0 lgunifiedsmart.com
+0.0.0.0 ngda.lge.com
+0.0.0.0 nudge.lgtvcommon.com
+0.0.0.0 rdl.lgtvcommon.com
+0.0.0.0 recommend.lgtvcommon.com
+0.0.0.0 smart.adtvc.app
+0.0.0.0 us.info.lgsmartad.com
+0.0.0.0 wiseconfig.lgtvcommon.com
+
+# ==============================================================================
+# [3. ACR TRACKING, ANALYTICS & VIEWING FINGERPRINTING]
+# ==============================================================================
+0.0.0.0 alphonso.tv
+0.0.0.0 cjpowercast.com
+0.0.0.0 cr-alphonso.tv
+0.0.0.0 prov-alphonso.tv
+0.0.0.0 smartclip.com
+0.0.0.0 smartclip.net
+0.0.0.0 tvsquared.com
+0.0.0.0 yumenetworks.com
+
+# ==============================================================================
+# [4. LG CHANNELS & STREAMING TELEMETRY]
+# ==============================================================================
+0.0.0.0 app-lgwebos.pluto.tv
+0.0.0.0 aws-thinq-prd.net
+0.0.0.0 bss.lgechannel.com
+0.0.0.0 esi-prd.net
+0.0.0.0 lgechannel.com
+0.0.0.0 xumo.com
+
+# ==============================================================================
+# [5. LG THINQ & IOT TELEMETRY]
+# ==============================================================================
+0.0.0.0 aic.api.lgtviot.com
+0.0.0.0 aic.lgtviot.com
+0.0.0.0 aic.service.lgtvcommon.com
+0.0.0.0 connect-client.lgthinq.com
+0.0.0.0 eic.api.lgtviot.com
+0.0.0.0 eic.iotservice.lgthinq.com
+0.0.0.0 eic.lgtviot.com
+0.0.0.0 eic.service.lgthinq.com
+0.0.0.0 eic.service.lgtvcommon.com
+0.0.0.0 kic.api.lgtviot.com
+0.0.0.0 kic.lgtviot.com
+0.0.0.0 kic.service.lgtvcommon.com
+0.0.0.0 lgthinqhome.com
+0.0.0.0 lgtviot.com
+0.0.0.0 lgtvonline.lge.com
+0.0.0.0 noti.lgthinq.com
+0.0.0.0 objectcontent.lgthinq.com
+0.0.0.0 service.lgtvcommon.com
