@@ -1,0 +1,43 @@
+# ==========================================
+# Private Local Developer & AI Tooling
+# (MUST NEVER be committed or pushed to Git)
+# ==========================================
+openspec/
+.openspec/
+.agents/
+.antigravity/
+AGENTS.md
+specs/
+tasks/
+
+# ==========================================
+# Python & Build artifacts
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# ==========================================
+# Operating System files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ==========================================
+# Editors & IDEs
+# ==========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+

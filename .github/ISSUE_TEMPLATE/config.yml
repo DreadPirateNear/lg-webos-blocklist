@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Community Discussions & Support
+    url: https://github.com/DreadPirateNear/lg-webos-blocklist/discussions
+    about: Ask questions, share router NAT rules, or discuss webOS setup.
+
