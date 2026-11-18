@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-11-18
+
+### Added
+- **Expanded Modern Domain Coverage**:
+  - LG Ad Solutions core CTV advertising and ACR platform: `lgads.tv`.
+  - Smartclip Connected TV video ad delivery: `smartclip.tv`.
+  - Direct webOS smart ad and regional endpoints: `ad.lgsmartad.com`, `aic.lgsmartad.com`, `eic.lgsmartad.com`, `kic.lgsmartad.com`.
+  - Customer Data Platform and Recommendation services: `aic.cdpsvc.lgtvcommon.com`, `kic.cdpsvc.lgtvcommon.com`, `aic.rdl.lgtvcommon.com`, `kic.rdl.lgtvcommon.com`.
+- **Automated Validation & CI**:
+  - Introduced `tests/test_blocklists.py` unit test suite verifying rule syntax, 1:1 multi-format parity, duplicate elimination, and safety exclusion guarantees.
+  - Added GitHub Actions workflow `.github/workflows/validate.yml` to automatically validate pull requests and pushes to `main`.
+
+---
+
 ## [1.0.0] - 2026-11-01
 
 ### Added

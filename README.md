@@ -1,11 +1,12 @@
 # LG webOS Universal Blocklist
 
-[![Blocked Domains](https://img.shields.io/badge/domains-108%20blocked-blue.svg?style=flat-square)](#protection-scope--blocked-categories)
+[![Blocked Domains](https://img.shields.io/badge/domains-118%20blocked-blue.svg?style=flat-square)](#protection-scope--blocked-categories)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Platform: AdGuard Home](https://img.shields.io/badge/AdGuard%20Home-Compatible-brightgreen?style=flat-square&logo=adguard)](https://adguard.com/)
 [![Platform: Pi-hole](https://img.shields.io/badge/Pi--hole-Compatible-red?style=flat-square&logo=pi-hole)](https://pi-hole.net/)
 [![Platform: NextDNS](https://img.shields.io/badge/NextDNS-Compatible-blue?style=flat-square&logo=nextdns)](https://nextdns.io/)
 [![Platform: Unbound / pfSense](https://img.shields.io/badge/Unbound%20%2F%20pfSense-Compatible-orange?style=flat-square)](https://www.pfsense.org/)
+[![Validation CI](https://github.com/DreadPirateNear/lg-webos-blocklist/actions/workflows/validate.yml/badge.svg)](https://github.com/DreadPirateNear/lg-webos-blocklist/actions/workflows/validate.yml)
 
 ### The Definitive DNS Adblock & Anti-Telemetry Blocklist for LG Smart TVs
 
@@ -61,8 +62,8 @@ This blocklist is continuously verified across the following LG TV generations a
 
 ## Protection Scope & Blocked Categories
 
-- **LG Ads, Sponsored Tiles & Screensavers**: Blocks banner promotions, home launcher recommendation tiles, and sponsored screensaver videos (`lgsmartad.com`, `ad.lgappstv.com`, `ibis.lgappstv.com`, `initscr.lge.com`, `lgunifiedsmart.com`).
-- **ACR & Viewing Analytics**: Blocks Automatic Content Recognition audio/video fingerprint harvesting engines that monitor what you watch over HDMI and broadcast TV (`alphonso.tv`, `cr-alphonso.tv`, `tvsquared.com`, `smartclip.com`, `smartclip.net`).
+- **LG Ads, Sponsored Tiles & Screensavers**: Blocks banner promotions, home launcher recommendation tiles, and sponsored screensaver videos (`lgsmartad.com`, `lgads.tv`, `ad.lgappstv.com`, `ibis.lgappstv.com`, `initscr.lge.com`, `lgunifiedsmart.com`).
+- **ACR & Viewing Analytics**: Blocks Automatic Content Recognition audio/video fingerprint harvesting engines that monitor what you watch over HDMI and broadcast TV (`alphonso.tv`, `cr-alphonso.tv`, `tvsquared.com`, `smartclip.tv`, `smartclip.com`, `smartclip.net`).
 - **LG ThinQ & IoT Telemetry**: Silences background tracking beacons, customer data platforms (CDP), and device telemetry (`lgtviot.com`, `connect-client.lgthinq.com`, `eic.cdpbeacon.lgtvcommon.com`, `ngda.lge.com`).
 - **OTA Firmware Update Shield**: Intercepts software update servers (`snu.lge.com`, `su.lge.com`, `ota.lge.com`, `lss.lgthinq.com`) to prevent unwanted background firmware upgrades that might restrict sideloading or alter home screen settings.
 

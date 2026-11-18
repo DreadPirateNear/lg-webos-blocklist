@@ -1,16 +1,4 @@
 # ==========================================
-# Private Local Developer & AI Tooling
-# (MUST NEVER be committed or pushed to Git)
-# ==========================================
-openspec/
-.openspec/
-.agents/
-.antigravity/
-AGENTS.md
-specs/
-tasks/
-
-# ==========================================
 # Python & Build artifacts
 # ==========================================
 __pycache__/

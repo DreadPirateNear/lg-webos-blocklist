@@ -1,9 +1,9 @@
 # Title: LG WebOS Universal Blocklist
 # Description: Curated blocklist for LG webOS Smart TVs.
-# Version: 1.0.0
-# Total Unique Domains: 108
+# Version: 1.1.0
+# Total Unique Domains: 118
 # Syntax: Plain Domains (one domain per line, suitable for Pi-hole and dnsmasq)
-# Last Modified: 01 Nov 2026 16:45 UTC
+# Last Modified: 18 Nov 2026 15:00 UTC
 # Homepage: https://github.com/DreadPirateNear/lg-webos-blocklist
 # License: MIT
 #
@@ -56,12 +56,16 @@ swu.lge.com
 # ==============================================================================
 a.lgappstv.com
 ad.lgappstv.com
+ad.lgsmartad.com
 ads.lgtvcommon.com
 adsdtvc.com
 aic.cdpbeacon.lgtvcommon.com
 aic.cdplauncher.lgtvcommon.com
+aic.cdpsvc.lgtvcommon.com
 aic.homeprv.lgtvcommon.com
+aic.lgsmartad.com
 aic.nudge.lgtvcommon.com
+aic.rdl.lgtvcommon.com
 aic.recommend.lgtvcommon.com
 aic.wiseconfig.lgtvcommon.com
 cdpbeacon.lgtvcommon.com
@@ -72,6 +76,7 @@ eic.cdpbeacon.lgtvcommon.com
 eic.cdplauncher.lgtvcommon.com
 eic.cdpsvc.lgtvcommon.com
 eic.homeprv.lgtvcommon.com
+eic.lgsmartad.com
 eic.nudge.lgtvcommon.com
 eic.rdl.lgtvcommon.com
 eic.recommend.lgtvcommon.com
@@ -84,10 +89,14 @@ info.lgsmartad.com
 initscr.lge.com
 kic.cdpbeacon.lgtvcommon.com
 kic.cdplauncher.lgtvcommon.com
+kic.cdpsvc.lgtvcommon.com
 kic.homeprv.lgtvcommon.com
+kic.lgsmartad.com
 kic.nudge.lgtvcommon.com
+kic.rdl.lgtvcommon.com
 kic.recommend.lgtvcommon.com
 kic.wiseconfig.lgtvcommon.com
+lgads.tv
 lgrecommends.lgappstv.com
 lgshopsvc.lgappstv.com
 lgsmartad.com
@@ -111,6 +120,7 @@ cr-alphonso.tv
 prov-alphonso.tv
 smartclip.com
 smartclip.net
+smartclip.tv
 tvsquared.com
 yumenetworks.com
 

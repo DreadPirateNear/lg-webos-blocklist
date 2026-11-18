@@ -1,9 +1,9 @@
 ! Title: LG WebOS Universal Blocklist
 ! Description: Curated AdGuard Home / ABP DNS blocklist for LG webOS Smart TVs.
-! Version: 1.0.0
-! Total Unique Domains: 108
+! Version: 1.1.0
+! Total Unique Domains: 118
 ! Syntax: Adblock Plus (||domain^)
-! Last Modified: 01 Nov 2026 16:45 UTC
+! Last Modified: 18 Nov 2026 15:00 UTC
 ! Homepage: https://github.com/DreadPirateNear/lg-webos-blocklist
 ! License: MIT
 !
@@ -44,18 +44,22 @@
 ||su-ssl.lge.com^
 ||su.lge.com^
 ||swu.lge.com^
-
+!
 ! ==============================================================================
 ! [LG ADS, SCREENSAVER & HOME LAUNCHER PROMOTIONS]
 ! ==============================================================================
 ||a.lgappstv.com^
 ||ad.lgappstv.com^
+||ad.lgsmartad.com^
 ||ads.lgtvcommon.com^
 ||adsdtvc.com^
 ||aic.cdpbeacon.lgtvcommon.com^
 ||aic.cdplauncher.lgtvcommon.com^
+||aic.cdpsvc.lgtvcommon.com^
 ||aic.homeprv.lgtvcommon.com^
+||aic.lgsmartad.com^
 ||aic.nudge.lgtvcommon.com^
+||aic.rdl.lgtvcommon.com^
 ||aic.recommend.lgtvcommon.com^
 ||aic.wiseconfig.lgtvcommon.com^
 ||cdpbeacon.lgtvcommon.com^
@@ -66,6 +70,7 @@
 ||eic.cdplauncher.lgtvcommon.com^
 ||eic.cdpsvc.lgtvcommon.com^
 ||eic.homeprv.lgtvcommon.com^
+||eic.lgsmartad.com^
 ||eic.nudge.lgtvcommon.com^
 ||eic.rdl.lgtvcommon.com^
 ||eic.recommend.lgtvcommon.com^
@@ -78,10 +83,14 @@
 ||initscr.lge.com^
 ||kic.cdpbeacon.lgtvcommon.com^
 ||kic.cdplauncher.lgtvcommon.com^
+||kic.cdpsvc.lgtvcommon.com^
 ||kic.homeprv.lgtvcommon.com^
+||kic.lgsmartad.com^
 ||kic.nudge.lgtvcommon.com^
+||kic.rdl.lgtvcommon.com^
 ||kic.recommend.lgtvcommon.com^
 ||kic.wiseconfig.lgtvcommon.com^
+||lgads.tv^
 ||lgrecommends.lgappstv.com^
 ||lgshopsvc.lgappstv.com^
 ||lgsmartad.com^
@@ -95,7 +104,7 @@
 ||smart.adtvc.app^
 ||us.info.lgsmartad.com^
 ||wiseconfig.lgtvcommon.com^
-
+!
 ! ==============================================================================
 ! [ACR TRACKING, ANALYTICS & VIEWING FINGERPRINTING]
 ! ==============================================================================
@@ -105,9 +114,10 @@
 ||prov-alphonso.tv^
 ||smartclip.com^
 ||smartclip.net^
+||smartclip.tv^
 ||tvsquared.com^
 ||yumenetworks.com^
-
+!
 ! ==============================================================================
 ! [LG CHANNELS & STREAMING TELEMETRY]
 ! ==============================================================================
@@ -117,7 +127,7 @@
 ||esi-prd.net^
 ||lgechannel.com^
 ||xumo.com^
-
+!
 ! ==============================================================================
 ! [LG THINQ & IOT TELEMETRY]
 ! ==============================================================================
